@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliferous Revival Hub | Media, Bookstore & Hub</title>
+    <!-- Tailwind CSS for sleek, modern typography and layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for clean user-interface icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Smooth transitions for interactive elements */
+        .cart-transition {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .faq-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-gray-800 antialiased">
+
+    <!-- ANNOUNCEMENT & REGIONAL INFO BAR -->
+    <div class="bg-indigo-900 text-indigo-100 text-xs py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-indigo-400 mr-1.5"></i> Nairobi, Kenya</span>
+                <span class="hidden sm:inline">|</span>
+                <span><i class="fa-solid fa-envelope text-indigo-400 mr-1.5"></i> info@aliferousrevival.org</span>
+            </div>
+            <div class="font-medium tracking-wide">
+                ✨ Digital Architecture Designed by <span class="font-bold text-white">Salt Anna</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BRANDED NAVIGATION HEADER -->
+    <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <!-- Ministry Identity Branding -->
+            <a href="#" class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 flex items-center gap-2.5">
+                <div class="bg-indigo-600 text-white p-2 rounded-xl shadow-md shadow-indigo-200">
+                    <i class="fa-solid fa-church"></i>
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="text-indigo-600 font-extrabold text-base sm:text-lg tracking-wider uppercase">Aliferous</span>
+                    <span class="text-slate-500 font-medium text-xs sm:text-sm">Revival Hub</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Site Navigation Links -->
+            <nav class="hidden md:flex space-x-8 font-medium text-sm">
+                <a href="#home" class="text-gray-500 hover:text-indigo-600 transition">Home</a>
+                <a href="#about" class="text-gray-500 hover:text-indigo-600 transition">Our Structure</a>
+                <a href="#shop" class="text-indigo-600 font-semibold border-b-2 border-indigo-600 pb-1">Resource Shop</a>
+                <a href="#faq" class="text-gray-500 hover:text-indigo-600 transition">FAQs</a>
+            </nav>
+
+            <!-- Responsive Shopping Cart counter action button -->
+            <button onclick="toggleCart()" class="relative p-2.5 text-gray-700 hover:text-indigo-600 transition focus:outline-none bg-slate-100 rounded-full">
+                <i class="fa-solid fa-shopping-bag text-xl"></i>
+                <span id="cart-count" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold hidden border-2 border-white">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PROMINENT HERO BANNER -->
+    <section id="home" class="bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 text-white py-24 text-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#4f46e5_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-3xl mx-auto relative z-10">
+            <span class="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1.5 rounded-full uppercase font-bold tracking-widest border border-indigo-500/30">Official Storefront</span>
+            <h1 class="text-4xl md:text-5xl font-black mt-4 mb-5 tracking-tight leading-tight">Aliferous Revival Hub Store</h1>
+            <p class="text-indigo-200/80 text-base md:text-lg max-w-2xl mx-auto font-light leading-relaxed mb-8">
+                Empower your walk of faith. Your purchases directly fund regional outreach setups and global ministry revival deployments.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#shop" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-900/40 text-sm">Explore Store</a>
+                <a href="#about" class="bg-white/10 hover:bg-white/15 text-white font-medium px-6 py-3 rounded-xl transition border border-white/20 text-sm">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED MINISTRY STRUCTURE & INFORMATION SECTION -->
+    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 py-16 border-b border-slate-200">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 block mb-2">Publicity & Structural Blueprint</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-6">Advancing Kingdom Reach Through Strategic Publicity</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    The Aliferous Revival Hub operates under a comprehensive publicity and branding structure built to anchor massive digital mobilization layouts, structural landing architectures, and formal corporate presentation networks.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    By synthesizing professional creative design layouts with secure resource distribution pipelines, we streamline spiritual support tools to make sure community systems scale gracefully across borders.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                        <i class="fa-solid fa-circle-check text-emerald-500 text-lg mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Dynamic Landing Frameworks</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Engineered for robust operational transparency and seamless administration access portals.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
+                        <i class="fa-solid fa-circle-check text-emerald-500 text-lg mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Secure Global Logistics</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Integrating high-tier transaction frameworks alongside dynamic regional asset processing nodes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-xl aspect-video lg:aspect-auto lg:h-[400px]">
+                <img src="https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?w=800&auto=format&fit=crop&q=80" alt="Ministry Workspace Presentation" class="w-full h-full object-cover mix-blend-overlay opacity-80">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent p-8 flex flex-col justify-end">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-1">Impact Overview</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Centralized Publicity Setup</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed max-w-md">Bridging the gap between standard administrative data interfaces and vibrant global fellowship communication structures.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STATISTICAL GRID GRAPHICS -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 text-center">
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-3xl font-black text-indigo-600 mb-1">10k+</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Active Responders</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-3xl font-black text-indigo-600 mb-1">45+</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Outreach Deployments</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-3xl font-black text-indigo-600 mb-1">100%</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Secure Gateways</span>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <span class="block text-3xl font-black text-indigo-600 mb-1">24/7</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Resource Delivery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STOREFRONT GRID SYSTEM -->
+    <section id="shop" class="max-w-7xl mx-auto px-4 sm:px-6 py-16 border-b border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900 mb-10 tracking-tight flex items-center gap-2">
+            <span class="w-2 h-6 bg-indigo-600 rounded-full block"></span>
+            Featured Spiritual Resources
+        </h2>
+        
+        <!-- Interactive Store Grid System Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Book Resource Item -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-200/60 transition duration-300 flex flex-col group">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1504052434569-70ad58565b90?w=600&auto=format&fit=crop&q=80" alt="Spiritual Awakening Guide Book" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-indigo-600 text-white text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-md font-bold shadow-sm">Literature</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition">Aliferous Spiritual Awakening Guide</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow leading-relaxed">A comprehensive daily structural framework mapping core revival patterns, prayer outlines, and daily faith edification logs.</p>
+                    <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-50">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Price</span>
+                            <span class="text-xl font-black text-slate-900">KES 1,500</span>
+                        </div>
+                        <button onclick="addToCart('Aliferous Spiritual Awakening Guide', 1500)" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sermon Audio Resource Item -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-200/60 transition duration-300 flex flex-col group">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=600&auto=format&fit=crop&q=80" alt="Breakthrough Sermon Audio" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-md font-bold shadow-sm">Digital Audio</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition">Breakthrough Audio Sermon Series</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow leading-relaxed">Pristine digital master download keys providing instant cloud-stream access to the complete ministry breakthrough messages.</p>
+                    <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-50">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Price</span>
+                            <span class="text-xl font-black text-slate-900">KES 500</span>
+                        </div>
+                        <button onclick="addToCart('Breakthrough Audio Sermon Series', 500)" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Branded Merchandise Resource Item -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:border-slate-200/60 transition duration-300 flex flex-col group">
+                <div class="relative h-64 overflow-hidden bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=600&auto=format&fit=crop&q=80" alt="Aliferous Ministry Premium Hoodie" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-md font-bold shadow-sm">Apparel</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition">Aliferous Hub Premium Hoodie</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow leading-relaxed">Finely stitched heavy cotton blends embellished with official insignia styling for church fellowships and dynamic outstation events.</p>
+                    <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-50">
+                        <div>
+                            <span class="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">Price</span>
+                            <span class="text-xl font-black text-slate-900">KES 2,500</span>
+                        </div>
+                        <button onclick="addToCart('Aliferous Hub Premium Hoodie', 2500)" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NEW INTERACTIVE FAQ SECTION -->
+    <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Frequently Asked Questions</h2>
+            <p class="text-slate-500 text-sm mt-2">Everything you need to know about resource distribution, payments, and downloads.</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="bg-white border border-slate-200/80 rounded-xl overflow-hidden transition shadow-sm">
+                <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 hover:text-indigo-600 transition focus:outline-none">
+                    <span>How will I receive digital products like e-books or audio files?</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden bg-slate-50/50">
+                    <p class="p-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Immediately upon completing a transaction through our secure payment nodes, an automated confirmation delivery protocol triggers a secure download link directly to your verified email inbox.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white border border-slate-200/80 rounded-xl overflow-hidden transition shadow-sm">
+                <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 hover:text-indigo-600 transition focus:outline-none">
+                    <span>What local payment options are supported?</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden bg-slate-50/50">
+                    <p class="p-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Our checkout system connects flawlessly with regional transaction modules including M-Pesa Express API alongside major international credit cards, ensuring completely secure financial processing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-white border border-slate-200/80 rounded-xl overflow-hidden transition shadow-sm">
+                <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center p-5 text-left font-bold text-slate-900 hover:text-indigo-600 transition focus:outline-none">
+                    <span>How are physical merchandise shipments handled?</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden bg-slate-50/50">
+                    <p class="p-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                        Physical orders (like custom ministry apparel) are processed within 48 working hours. Standard distribution channels handle logistics throughout Kenya, with tracking updates dispatched automatically via SMS notification lines.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER DESIGN BRIDGES -->
+    <footer class="bg-slate-900 text-slate-400 text-xs py-12 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="text-white font-bold text-sm tracking-wide uppercase mb-1">Aliferous Revival Hub</h4>
+                <p class="text-slate-500">Transforming local fellowships into expansive international networks.</p>
+            </div>
+            <p>© 2026 Aliferous Revival Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SHOPPING CART SLIDE PANEL CONTAINER -->
+    <div id="cart-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex justify-end hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white w-full max-w-md h-full shadow-2xl p-6 flex flex-col justify-between transform translate-x-full cart-transition">
+            
+            <!-- Structural Cart Elements Header -->
+            <div>
+                <div class="flex justify-between items-center border-b border-slate-100 pb-4 mb-6">
+                    <h3 class="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-shopping-basket text-indigo-600"></i> Selected Resources
+                    </h3>
+                    <button onclick="toggleCart()" class="text-slate-400 hover:text-slate-600 text-xl p-1 rounded-lg hover:bg-slate-50 transition focus:outline-none">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+                <!-- Dynamic Script List Generation Output Node -->
+                <div id="cart-items" class="space-y-4 overflow-y-auto max-h-[65vh] pr-1">
+                    <p class="text-slate-400 text-center py-12 text-sm">Your cart is currently empty.</p>
+                </div>
+            </div>
+
+            <!-- Sticky Cart Summary & Functional Processing Button -->
+            <div class="border-t border-slate-100 pt-5">
+                <div class="flex justify-between text-base font-bold text-slate-900 mb-5">
+                    <span>Grand Total:</span>
+                    <span id="cart-total" class="text-xl text-indigo-900 font-black">KES 0.00</span>
+                </div>
+                <button onclick="checkout()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-md transition text-center tracking-wider text-sm uppercase">
+                    Proceed to Checkout
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CLEAN MODULAR EXECUTION ENGINE -->
+    <script>
+        let cart = [];
+
+        // Manages sidebar animation classes smoothly
+        function toggleCart() {
+            const modal = document.getElementById('cart-modal');
+            const innerPanel = modal.firstElementChild;
+            
+            if (modal.classList.contains('hidden')) {
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    innerPanel.classList.remove('translate-x-full');
+                }, 50);
+            } else {
+                modal.classList.add('opacity-0');
+                innerPanel.classList.add('translate-x-full');
+                setTimeout(() => modal.classList.add('hidden'), 300);
+            }
+        }
+
+        // Handles insertion updates inside runtime collection
+        function addToCart(title, price) {
+            const existingItem = cart.find(item => item.title === title);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ title, price, quantity: 1 });
+            }
+            updateCartUI();
+        }
+
+        // Transforms current collection elements into user-friendly UI nodes
+        function updateCartUI() {
+            const countBadge = document.getElementById('cart-count');
+            const itemsContainer = document.getElementById('cart-items');
+            const totalContainer = document.getElementById('cart-total');
+            
+            const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+            countBadge.innerText = totalItems;
+            
+            if (totalItems > 0) countBadge.classList.remove('hidden');
+            else countBadge.classList.add('hidden');
+
+            if (cart.length === 0) {
+                itemsContainer.innerHTML = '<p class="text-slate-400 text-center py-12 text-sm">Your cart is currently empty.</p>';
+                totalContainer.innerText = 'KES 0.00';
+                return;
+            }
+
+            let htmlContent = '';
+            let grandTotalCalculated = 0;
+            
+            cart.forEach(item => {
+                const rowTotal = item.price * item.quantity;
+                grandTotalCalculated += rowTotal;
+                htmlContent += `
+                    <div class="flex justify-between items-center bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                        <div class="max-w-[70%]">
+                            <h4 class="font-bold text-slate-900 text-sm truncate">${item.title}</h4>
+                            <p class="text-xs text-slate-400 mt-0.5">KES ${item.price.toLocaleString()} × ${item.quantity}</p>
+                        </div>
+                        <span class="font-bold text-indigo-900 text-sm">KES ${rowTotal.toLocaleString()}</span>
+                    </div>
+                `;
+            });
+            
+            itemsContainer.innerHTML = htmlContent;
+            totalContainer.innerText = `KES ${grandTotalCalculated.toLocaleString()}`;
+        }
+
+        // Checkout prompt endpoint integration hook
+        function checkout() {
+            if (cart.length === 0) {
+                alert("Your cart is empty! Add products before checking out.");
+                return;
+            }
+            alert("Connecting securely with Aliferous Revival Hub secure processing nodes (M-Pesa Express / Visa Gateway)...");
+        }
+
+        // Handles smooth interactive FAQ accordion drops
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Close all other opened panels first
+                document.querySelectorAll('.faq-content').forEach(el => el.style.maxHeight = '0px');
+                document.querySelectorAll('#faq i').forEach(el => el.style.transform = 'rotate(0deg)');
+                
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+</body>
+</html>
